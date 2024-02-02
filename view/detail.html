@@ -1,0 +1,26 @@
+<h2 ng-bind="title" class="text-center"></h2>
+<form ng-submit="()">
+    <div class="mb-3">
+      <label for="tenSach" class="form-label">Tên sách</label>
+      <input ng-model="book.tenSach" type="text" class="form-control" disabled id="tenSach">
+    </div>
+    <div class="col-md-12">
+        <label for="inputState" class="form-label">Thể loại</label>
+        <select ng-model="book.theLoai" id="inputState" class="form-select" disabled>
+          <option value="1" >Lịch sử</option>
+          <option value="2">Tâm lý học</option>
+          <option value="3">Truyện tranh</option>
+        </select>
+      </div>
+    <div class="mb-3">
+        <label for="gia" class="form-label">Giá</label>
+        <input ng-model="book.gia" type="text" class="form-control" disabled id="gia">
+      </div>
+      <div class="mb-3">
+        <label for="Soluong" class="form-label">Số lượng</label>
+        <input ng-model="book.Soluong" type="text" class="form-control" disabled id="Soluong">
+      </div>
+    <a href="#!/trang-chu">
+        <button type="submit" class="btn btn-success">Quay lại</button>
+    </a>
+  </form>

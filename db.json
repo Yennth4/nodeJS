@@ -1,0 +1,60 @@
+{
+  "book": [
+    {
+      "tenSach": "Thỏ bảy màu",
+      "theLoai": "1",
+      "gia": "55.000",
+      "Soluong": "251",
+      "id": "76f7"
+    },
+    {
+      "id": "08b5",
+      "tenSach": "Sách vui",
+      "theLoai": "2",
+      "gia": "89.000 vnđ",
+      "Soluong": "122"
+    },
+    {
+      "id": "c571",
+      "tenSach": "Đắc nhân tâm",
+      "theLoai": "3",
+      "gia": "1000000",
+      "Soluong": "200"
+    },
+    {
+      "id": "bda9",
+      "tenSach": "Thám Tử Lừng Danh Conan",
+      "theLoai": "3",
+      "gia": "100.000",
+      "Soluong": "200"
+    },
+    {
+      "id": "e53e",
+      "tenSach": "Doremon",
+      "theLoai": "3",
+      "gia": "100.000",
+      "Soluong": "200"
+    },
+    {
+      "tenSach": "Đắc nhân tâm",
+      "theLoai": "1",
+      "gia": "100.000",
+      "Soluong": "1",
+      "id": "7692"
+    },
+    {
+      "id": "f690",
+      "tenSach": "Triết học Mác-LêNin",
+      "theLoai": "1",
+      "gia": "100.000",
+      "Soluong": "12"
+    },
+    {
+      "id": "9d8e",
+      "tenSach": "1",
+      "theLoai": "2",
+      "gia": "100.000",
+      "Soluong": "1"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nguyễn Hải Yến</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./libs/angular.min.js"></script>
+    <script src="./libs/angular.route.min.js"></script>
+</head>
+<body ng-app="Sach">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/png;base64,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"
+                    alt="" width="150xp" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#!trang-chu">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang khác</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="#!">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </a>         
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container" ng-view></div>
+
+    <script src="./controller/listController.js"></script>
+    <script src="./controller/addController.js"></script>
+    <script src="./controller/editController.js"></script>
+    <script src="./controller/detailController.js"></script>
+
+    <script>
+        let myApp = angular.module('Sach', ['ngRoute']);
+
+        myApp.config(function($routeProvider){
+          $routeProvider
+        .when('/trang-chu', {
+            templateUrl: 'view/list.html',
+            controller: listController
+        })
+        .when('/Them', {
+            templateUrl: 'view/add.html',
+            controller: addController
+        })
+        .when('/detail/:id', {
+            templateUrl: 'view/detail.html',
+            controller: detailController
+        })
+        .when('/Sua/:id', {
+            templateUrl: 'view/edit.html',
+            controller: editController
+        })
+        .otherwise({
+            redirectTo : '/trang-chu'
+        })
+        })
+    </script>
+</body>
+</html>

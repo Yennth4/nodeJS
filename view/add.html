@@ -1,0 +1,40 @@
+<div class="text-center"><h2>Trang thêm sách</h2></div>
+<form ng-submit="ThemSach()">
+    <div class="mb-3">
+      <label for="tenSach" class="form-label">Tên sách</label>
+      <input ng-model="book.tenSach" type="text" class="form-control" id="tenSach">
+      <div class="form-text">
+        VD : Đắc nhân tâm
+      </div>
+      <span class="text-danger" ng-if="test.tenSach">Vui lòng nhập tên sách</span>
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="inputState" class="form-label">Thể loại</label>
+        <select ng-model="book.theLoai" id="inputState" class="form-select">
+          <option value="1" >Lịch sử</option>
+          <option value="2">Tâm lý học</option>
+          <option value="3">Truyện tranh</option>
+        </select>
+        <span class="text-danger" ng-if="test.theLoai">Vui lòng chọn thể loại</span>
+      </div>
+    <div class="mb-3">
+        <label for="gia" class="form-label">Giá bán</label>
+        <input ng-model="book.gia" type="text" class="form-control" id="gia">
+        <div class="form-text">
+          VD : 100.000
+        </div>
+        <span class="text-danger" ng-if="test.gia">Vui lòng nhập giá</span>
+    </div>
+      <div class="mb-3">
+        <label for="Soluong" class="form-label">Số lượng</label>
+        <input ng-model="book.Soluong" type="text" class="form-control" id="Soluong">
+        <div class="form-text">
+          VD : 100
+        </div>
+        <span class="text-danger" ng-if="test.Soluong">Vui lòng nhập số lượng</span>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success">Thêm</button>
+        <button type="reset" class="btn btn-outline-secondary">reset</button>
+      </div>
+  </form>

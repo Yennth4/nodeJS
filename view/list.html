@@ -1,0 +1,35 @@
+<div class="text-center"><h2>Trang chủ</h2></div>
+<a href="#!/Them"><button class="btn btn-success mb-3">Thêm sách</button></a>
+<table class="table table-bordered table-light table-hover table-striped text-center">
+    <thead>
+      <tr >
+        <th scope="col">STT</th>
+        <th scope="col">Tên sách</th>
+        <th scope="col">Thể loại</th>
+        <th scope="col">Giá</th>
+        <th scope="col">Số lượng</th>
+        <th scope="col">Thao tác</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="book in listbook">
+        <th scope="row" >{{$index+1}}</th>
+        <td>{{book.tenSach}}</td>
+        <td>
+            <span ng-if="book.theLoai==1">Lịch sử</span>
+            <span ng-if="book.theLoai==2">Tâm lý học</span>
+            <span ng-if="book.theLoai==3">Truyện tranh</span>
+        </td>
+        <td>{{book.gia}}</td>
+        <td>{{book.Soluong}}</td>
+        <td>
+          <a href="#!/detail/{{ book.id }}">
+            <button class="btn btn btn-secondary">Detail</button>
+          </a>
+            <a href="#!/Sua/{{ book.id }}">
+              <button class="btn btn-warning">Edit</button>
+            </a>
+            <button ng-click="deleteBook(book.id)" class="btn btn-outline-danger">Delete</button>
+      </tr>
+    </tbody>
+  </table>
